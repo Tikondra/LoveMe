@@ -1,0 +1,94 @@
+.register {
+  max-width: 330px;
+  margin: auto;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
+}
+
+.register__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.register__input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.register__gender-select {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #585858;
+}
+
+.register__radio-label {
+  border-bottom: 1px dashed #585858;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.register__gender-input:checked ~ .register__radio-label {
+  opacity: 1;
+}
+
+.register__agree {
+  color: #585858;
+}
+
+.register__submit {
+  background-color: #FF4949;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  padding: 11px;
+  margin-top: 15px;
+  border: none;
+
+  &:hover {
+    background-color: darken(#FF4949, 5%);
+  }
+
+  &:active {
+    background-color: darken(#FF4949, 10%);
+  }
+}
+
+@media (min-width: 768px) {
+  .register {
+    margin: 0;
+    padding: 20px;
+    min-width: 280px;
+  }
+
+  .register__input {
+    margin-bottom: 30px;
+  }
+
+  .register__gender-select {
+    margin-bottom: 30px;
+  }
+
+  .register__submit {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .register {
+    min-width: 330px;
+    padding: 30px;
+  }
+}

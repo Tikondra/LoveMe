@@ -1,0 +1,17 @@
+.header-controls__select {
+  border: none;
+  background-color: transparent;
+}
+
+.header-controls__sign-in {
+  padding: 10px;
+  font-weight: 500;
+  border: 1px solid #FF4949;
+  background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  .header-controls__select {
+    margin-right: 40px;
+  }
+}
