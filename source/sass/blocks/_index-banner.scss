@@ -25,6 +25,9 @@
 @media (min-width: 768px) {
   .index-banner {
     padding: 120px 20px 60px;
+  }
+
+  .index-banner__wrapper {
     display: flex;
   }
 
@@ -35,7 +38,6 @@
 
 @media (min-width: 1024px) {
   .index-banner {
-    @include container;
     padding: 170px 50px 150px;
     margin: auto;
     margin-top: -130px;
@@ -43,6 +45,10 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
+  }
+
+  .index-banner__wrapper {
+    @include container;
   }
 
   .index-banner__content {

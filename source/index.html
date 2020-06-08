@@ -24,7 +24,7 @@
             <a class="header-navigation__link" href="#">Why choose us</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link" href="#">Services</a>
+            <a class="header-navigation__link" href="service.html">Services</a>
           </li>
           <li class="header-navigation__item">
             <a class="header-navigation__link" href="#">Contacts</a>
@@ -54,51 +54,53 @@
     </header>
     <main>
       <section class="index-banner">
-        <form class="index-banner__form register">
-          <h2 class="register__title">First time with us?</h2>
-          <input class="register__input" type="text" name="name" placeholder="Name" required>
-          <input class="register__input" type="text" name="birthday" placeholder="Birthday" required>
-          <input class="register__input" type="text" name="email" placeholder="E-mail" required>
-          <input class="register__input" type="password" name="password" placeholder="Password" required>
-          <ul class="register__gender-select">
-            <li>
-              <input class="register__gender-input visually-hidden" type="radio" name="gender" value="man" id="genderman" required>
-              <label class="register__radio-label" for="genderman">
-                <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
-                  <use xlink:href="#icon-man"></use>
-                </svg>
-                <span class="register__radio-text">I am man</span>
-              </label>
-            </li>
-            <li>
-              <input class="register__gender-input visually-hidden" type="radio" name="gender" value="woman" id="genderwoman" required>
-              <label class="register__radio-label" for="genderwoman">
-                <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
-                  <use xlink:href="#icon-woman"></use>
-                </svg>
-                <span class="register__radio-text">I am woman</span>
-              </label>
-            </li>
-          </ul>
+        <div class="index-banner__wrapper">
+          <form class="index-banner__form register">
+            <h2 class="register__title">First time with us?</h2>
+            <input class="register__input" type="text" name="name" placeholder="Name" required>
+            <input class="register__input" type="text" name="birthday" placeholder="Birthday" required>
+            <input class="register__input" type="text" name="email" placeholder="E-mail" required>
+            <input class="register__input" type="password" name="password" placeholder="Password" required>
+            <ul class="register__gender-select">
+              <li>
+                <input class="register__gender-input visually-hidden" type="radio" name="gender" value="man" id="genderman" required>
+                <label class="register__radio-label" for="genderman">
+                  <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
+                    <use xlink:href="#icon-man"></use>
+                  </svg>
+                  <span class="register__radio-text">I am man</span>
+                </label>
+              </li>
+              <li>
+                <input class="register__gender-input visually-hidden" type="radio" name="gender" value="woman" id="genderwoman" required>
+                <label class="register__radio-label" for="genderwoman">
+                  <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
+                    <use xlink:href="#icon-woman"></use>
+                  </svg>
+                  <span class="register__radio-text">I am woman</span>
+                </label>
+              </li>
+            </ul>
 
-          <label class="register__agree">
-            <input type="checkbox" name="agree" required>
-            <span> I agree to the Terms of Use and Privacy Policy.</span>
-          </label>
-          <button class="register__submit" type="submit">Register</button>
-        </form>
-        <div class="index-banner__content">
-          <h1 class="index-banner__title"><span>Consectetur</span> lorem donec massa sapien</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-          </p>
-          <p>
-            Et odio pellentesque diam volutpat commodo sed egestas. Egestas sed sed risus pretium quam. Purus non enim praesent elementum facilisis leo vel fringilla est.
-          </p>
+            <label class="register__agree">
+              <input type="checkbox" name="agree" required>
+              <span> I agree to the Terms of Use and Privacy Policy.</span>
+            </label>
+            <button class="register__submit" type="submit">Register</button>
+          </form>
+          <div class="index-banner__content">
+            <h1 class="index-banner__title"><span>Consectetur</span> lorem donec massa sapien</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+            </p>
+            <p>
+              Et odio pellentesque diam volutpat commodo sed egestas. Egestas sed sed risus pretium quam. Purus non enim praesent elementum facilisis leo vel fringilla est.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="services">
-        <h2 class="services__title">Use our services</h2>
+      <section class="our-services">
+        <h2 class="our-services__title">Use our services</h2>
       </section>
       <section class="who-online">
         <h2 class="who-online__title">Look who is online</h2>

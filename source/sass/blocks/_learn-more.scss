@@ -23,6 +23,10 @@
   color: #fff;
   background-color: #FF4949;
   text-align: center;
+
+  &:hover {
+    background-color: darken(#FF4949, 5%);
+  }
 }
 
 .learn-more__video {
