@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LoveMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <a href="index.html">
+        <img class="header__logo" src="img/logo.svg" width="67" height="44" alt="LoveMe">
+      </a>
+      <nav class="header__navigation header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Vacancies</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Beauteful girls</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Why choose us</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="service.html">Services</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__navigation-btn" type="button">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40">
+          <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+          <path
+                class="line middle"
+                d="m 30,50 h 40" />
+          <path
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+      </button>
+      <form class="header__controls header-controls">
+        <select class="header-controls__select">
+          <option>Ru</option>
+          <option>En</option>
+        </select>
+        <button class="header-controls__sign-in" type="button">Sign in</button>
+      </form>
+    </header>
+    <main>
+      <section class="faq">
+        <div class="faq__content">
+          <h2 class="faq__title"><span>F</span>requently <span>A</span>sked <span>Q</span>uestions</h2>
+          <nav class="faq__nav">
+            <ul class="faq__nav-list">
+              <li class="faq__nav-item faq__nav-item--active">About agency</li>
+              <li class="faq__nav-item">Ladies</li>
+              <li class="faq__nav-item">Services</li>
+              <li class="faq__nav-item">Payment</li>
+              <li class="faq__nav-item">Registration</li>
+            </ul>
+          </nav>
+          <ul class="faq__list">
+            <li class="faq__item faq__item--active">
+              <ul class="faq__item-list">
+                <li>
+                  <h4>How can I be sure that ladies are serious on your website?</h4>
+                  <ul class="faq__item-subtitle">
+                    <li>
+                      ladies pay to be our agency. This is actually unique step for marriage agencies in former USSR – still we decided to take this step, just because we want only seriously motivated ladies.
+                    </li>
+                    <li>
+                      ladies are carefully selected by agency experienced matchmaker before they go online.
+                    </li>
+                  </ul>
+                  <p>
+                    We put a very close eye to every woman who comes to the agency, from the day she comes to our office. Ladies come through long detailed interviews and testing, passport check, then we meet here again for photo session, profile composure, intercultural lessons for ladies. We have enough time to see whom we put online, and whom we say Good luck.
+                  </p>
+                </li>
+                <li>
+                  <h4>I never used your services before, how can I trust your agency?</h4>
+                </li>
+                <li>
+                  <h4>What is your agency success rate?</h4>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <form class="register register--full-width">
+          <h2 class="register__title">First time with us?</h2>
+          <p class="register__description">Sign up and become part of our team, we will help you find your love </p>
+          <div class="register__wrapper">
+            <input class="register__input" type="text" name="name" placeholder="Name" required>
+            <input class="register__input" type="text" name="birthday" placeholder="Birthday" required>
+            <input class="register__input" type="text" name="email" placeholder="E-mail" required>
+            <input class="register__input" type="password" name="password" placeholder="Password" required>
+            <ul class="register__gender-select">
+              <li>
+                <input class="register__gender-input visually-hidden" type="radio" name="gender" value="man" id="genderman" required>
+                <label class="register__radio-label" for="genderman">
+                  <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
+                    <use xlink:href="#icon-man"></use>
+                  </svg>
+                  <span class="register__radio-text">I am man</span>
+                </label>
+              </li>
+              <li>
+                <input class="register__gender-input visually-hidden" type="radio" name="gender" value="woman" id="genderwoman" required>
+                <label class="register__radio-label" for="genderwoman">
+                  <svg class="register__radio-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#585858">
+                    <use xlink:href="#icon-woman"></use>
+                  </svg>
+                  <span class="register__radio-text">I am woman</span>
+                </label>
+              </li>
+            </ul>
+
+            <label class="register__agree">
+              <input type="checkbox" name="agree" required>
+              <span> I agree to the Terms of Use and Privacy Policy.</span>
+            </label>
+            <button class="register__submit" type="submit">Register</button>
+          </div>
+
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <img class="footer__logo" src="img/logo.svg" width="67" height="44" alt="LoveMe">
+        <nav class="footer__nav footer-navigation">
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Home</a>
+            </li>
+
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Vacancies</a>
+            </li>
+
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Beauteful girls</a>
+              <ul class="footer-navigation__sublist">
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Girls on-line</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">New girls</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Girls from Russa</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Girls from USA</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Girls from China</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Why choose us</a>
+              <ul class="footer-navigation__sublist">
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">About us</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Blog</a>
+                </li>
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Our love stories</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Services</a>
+              <ul class="footer-navigation__sublist">
+                <li>
+                  <a class="footer-navigation__link footer-navigation__link--sub" href="">Our prices</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <p class="footer__social-title">Follow me</p>
+          <ul class="footer__social-list">
+            <li>
+              <a href="">
+                <img src="img/fb.png" width="37" height="37" align="LoveMe in Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/inst.png" width="37" height="37" align="LoveMe in Instagram">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/vk.png" width="37" height="37" align="LoveMe in VKontakte">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/tw.png" width="37" height="37" align="LoveMe in Twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">©2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

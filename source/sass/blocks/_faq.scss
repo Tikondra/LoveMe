@@ -1,0 +1,125 @@
+.faq {
+  background-color: #cbd5d6;
+  padding-top: 120px;
+  margin-top: -84px;
+}
+
+.faq__content {
+  padding: 0 20px 30px;
+}
+
+.faq__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+
+  span {
+    color: #FF4949;
+  }
+}
+
+
+.faq__nav-list {
+  @include list;
+}
+
+.faq__nav-item {
+  position: relative;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -33px;
+    width: 0;
+    height: 3px;
+    background-color: #52BFFF;
+    transition: 0.3s ease;
+  }
+
+  &--active {
+    &::after {
+      width: 66px;
+    }
+  }
+}
+
+
+
+
+
+.faq__list {
+  @include list;
+  display: flex;
+}
+
+.faq__item-title {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -33px;
+    width: 0;
+    height: 3px;
+    background-color: #52BFFF;
+    transition: 0.3s ease;
+  }
+}
+
+.faq__item {
+  min-width: 100%;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.faq__item-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.faq__item-subtitle {
+  list-style: circle;
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq__content {
+    @include container;
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq {
+    padding-top: 150px;
+    margin-top: -130px;
+    background-image: url("../img/service-back.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .faq__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
