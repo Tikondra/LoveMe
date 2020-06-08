@@ -1,5 +1,8 @@
 .tru-story {
+  position: relative;
   padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .tru-story__main-img {
@@ -32,6 +35,10 @@
   img {
     margin: auto;
   }
+}
+
+.tru-story__next {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -73,9 +80,52 @@
   }
 
   .tru-story__info {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
     max-width: 610px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -60px;
+      width: 119px;
+      height: 163px;
+      background-image: url("../img/tru-story-back.png");
+    }
+  }
+
+  .tru-story__next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/next.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tru-story__next {
+    right: 40px;
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tru-story__next {
+    right: 80px;
   }
 }
