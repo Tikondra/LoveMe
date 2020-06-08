@@ -1,0 +1,104 @@
+.who-we {
+  padding: 70px 0;
+}
+
+.who-we__title {
+  position: relative;
+  padding: 20px;
+  margin-bottom: -90px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: -30px;
+    width: 251px;
+    height: 119px;
+    background-image: url("../img/who-we-back.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.who-we__list {
+  @include list;
+  background-color: #FAFAFA;
+}
+
+.who-we__text {
+  display: none;
+}
+
+.who-we__item {
+  padding: 90px 20px 20px;
+  margin: 0 auto;
+  max-width: 500px;
+
+  &--active {
+    padding-top: 60px;
+    background: rgba(209, 219, 223, 0.34);
+    backdrop-filter: blur(20px);
+
+    .who-we__text {
+      display: block;
+    }
+  }
+}
+
+.who-we__item-title {
+  font-weight: 600;
+  padding: 10px;
+  padding-left: 60px;
+  max-width: 300px;
+  background-image: url("../img/whowe1.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  &--2 {
+    background-image: url("../img/whowe2.png");
+  }
+
+  &--3 {
+    background-image: url("../img/whowe3.png");
+  }
+
+  &--4 {
+    background-image: url("../img/whowe4.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .who-we__title {
+    padding: 20px 50px;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .who-we__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .who-we__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .who-we__list {
+    padding: 0 50px;
+  }
+
+  .who-we__item {
+    width: 25%;
+  }
+}
